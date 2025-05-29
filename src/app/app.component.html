@@ -1,0 +1,16 @@
+<form>
+
+<input type="text" (input)="onupdate1($event)"/>
+<input type="text" ngModel="twoway" name="hi"/>
+<button [disabled]="henry" > Click me</button>
+<p>{{title}}</p>
+<p>{{twoway}}</p> 
+<!-- <p>{{game}}</p> -->
+</form>
+<a routerLink="/app/cricket">Go to cricket</a>
+<form  (ngSubmit)="onSubmit(f)" #f="ngForm">
+  <input type = "text"  name="first" ngModel="lo"/>
+  <button type="submit">submit</button>
+</form> 
+<router-outlet></router-outlet>
+<!-- <app-cricket (game)="cap($event)"></app-cricket> -->
